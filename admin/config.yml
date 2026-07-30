@@ -2,15 +2,17 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: ""
-public_folder: "/"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "website"
-    label: "Website"
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: "index.html"
-        label: "Home Page"
+      - label: "Home"
         name: "home"
+        file: "index.html"
         fields:
-          - { label: "Page", name: "body", widget: "text" }
+          - label: "Content"
+            name: "body"
+            widget: "markdown"

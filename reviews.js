@@ -21,7 +21,7 @@ document.getElementById("submitReview").addEventListener("click", async () => {
 
   if (error) {
     alert("Review submit नहीं हुआ");
-    console.error(error);
+    alert(JSON.stringify(error));
   } else {
     alert("धन्यवाद! आपका Review भेज दिया गया है।");
     document.getElementById("name").value = "";

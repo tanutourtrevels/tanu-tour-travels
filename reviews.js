@@ -60,4 +60,5 @@ document.getElementById("submitReview").addEventListener("click", async () => {
   loadReviews();
 });
 
+alert("reviews.js loaded");
 loadReviews();
